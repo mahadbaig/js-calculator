@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-screen">
+    <input type="text" name="" id="screen" placeholder="0" disabled>
+    </div>
+
+    <div class="calc-buttons">
+        <table>
+            <tr>
+                <th id="all-clear">AC</th>
+                <th id="clear" onclick="clear()">C</th>
+                <th onclick="buttontap('/')">/</th>
+                <th onclick="buttontap('%')">%</th>
+            </tr>
+
+            <tr>
+                <th onclick="buttontap(7)">7</th>
+                <th onclick="buttontap(8)">8</th>
+                <th onclick="buttontap(9)">9</th>
+                <th onclick="buttontap('+')">+</th>
+            </tr>
+
+            <tr>
+                <th onclick="buttontap(4)">4</th>
+                <th onclick="buttontap(5)">5</th>
+                <th onclick="buttontap(6)">6</th>
+                <th onclick="buttontap('-')">-</th>
+            </tr>
+
+            <tr>
+                <th onclick="buttontap(1)">1</th>
+                <th onclick="buttontap(2)">2</th>
+                <th onclick="buttontap(3)">3</th>
+                <th onclick="buttontap('*')">*</th>
+            </tr>
+
+            <tr>
+                <th onclick="buttontap(0)">0</th>
+                <th onclick="buttontap('.')">.</th>
+                <th colspan="2" onclick="results" >=</th>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
