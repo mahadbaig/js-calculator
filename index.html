@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
@@ -9,15 +9,21 @@
 </head>
 <body>
 
-    <div class="calc-screen">
-    <input type="text" name="" id="screen" placeholder="0" disabled>
+    <h1 style="text-align: center; margin-top: 20px; margin-bottom: -30px; background-color: aliceblue;">
+        CALCULATOR
+    </h1>
+    
+    <div class="calculator">
+        <div class="outerbox">
+            <div class="calc-screen">
+        <input type="text" name="" id="screen" placeholder="0" disabled>
     </div>
 
     <div class="calc-buttons">
         <table>
             <tr>
-                <th id="all-clear">AC</th>
-                <th id="clear" onclick="clear()">C</th>
+                <th id="all-clear" onclick="allClear()">AC</th>
+                <th id="clear" onclick="oneClear()">C</th>
                 <th onclick="buttontap('/')">/</th>
                 <th onclick="buttontap('%')">%</th>
             </tr>
@@ -35,22 +41,25 @@
                 <th onclick="buttontap(6)">6</th>
                 <th onclick="buttontap('-')">-</th>
             </tr>
-
+            
             <tr>
                 <th onclick="buttontap(1)">1</th>
                 <th onclick="buttontap(2)">2</th>
                 <th onclick="buttontap(3)">3</th>
                 <th onclick="buttontap('*')">*</th>
             </tr>
-
+            
             <tr>
                 <th onclick="buttontap(0)">0</th>
                 <th onclick="buttontap('.')">.</th>
-                <th colspan="2" onclick="results" >=</th>
+                <th colspan="2" onclick="results()" >=</th>
                 
             </tr>
         </table>
     </div>
+</div>
+</div>
 </body>
+
 <script src="app.js"></script>
 </html>
